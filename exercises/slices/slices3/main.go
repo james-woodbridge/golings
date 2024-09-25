@@ -1,13 +1,16 @@
 // slices3
 // Make me compile!
 
-// I AM NOT DONE
 package main
 
 import "fmt"
 
 func main() {
-	names := []string{"John", "Maria", "Carl", "Peter"}
-	names = append()
+	var names []string
+	fmt.Println(len(names))
+	fmt.Println(cap(names))
+	names = append(names, "Tom")
+	fmt.Println(len(names))
+	fmt.Println(cap(names))
 	fmt.Println(names)
 }
